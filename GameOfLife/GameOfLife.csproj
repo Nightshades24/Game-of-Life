@@ -101,6 +101,7 @@
     <None Include="Resources\PLAY.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\RESET.png" />
     <None Include="Resources\CLOSE.png" />
     <None Include="Resources\HELP.png" />
     <Content Include="Resources\OFF.png" />

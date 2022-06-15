@@ -56,6 +56,7 @@ namespace GameOfLife
             textBoxBlijfLeven.ReadOnly = false;
             textBoxRadius.ReadOnly = false;
             textBoxSnelheid.ReadOnly = false;
+            Reset.Enabled = true;
             Play.Show();
         }
 
@@ -67,6 +68,7 @@ namespace GameOfLife
             textBoxBlijfLeven.ReadOnly = true;
             textBoxRadius.ReadOnly = true;
             textBoxSnelheid.ReadOnly = true;
+            Reset.Enabled = false;
             Pauze.Show();
         }
 
@@ -246,6 +248,12 @@ namespace GameOfLife
             lines = false;
             lines_changed = true;
             RasterOn.Show();
+            panel.Invalidate();
+        }
+
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            grid = Sizeprompt.grid;
             panel.Invalidate();
         }
     }

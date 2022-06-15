@@ -40,6 +40,7 @@
             this.Play = new System.Windows.Forms.Button();
             this.RasterOn = new System.Windows.Forms.Button();
             this.RasterOff = new System.Windows.Forms.Button();
+            this.Reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxLeven
@@ -197,6 +198,21 @@
             this.RasterOff.Visible = false;
             this.RasterOff.Click += new System.EventHandler(this.RasterOff_Click);
             // 
+            // Reset
+            // 
+            this.Reset.BackColor = System.Drawing.Color.Transparent;
+            this.Reset.FlatAppearance.BorderSize = 0;
+            this.Reset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Reset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Reset.Image = global::GameOfLife.Properties.Resources.RESET;
+            this.Reset.Location = new System.Drawing.Point(1293, 983);
+            this.Reset.Name = "Reset";
+            this.Reset.Size = new System.Drawing.Size(120, 38);
+            this.Reset.TabIndex = 20;
+            this.Reset.UseVisualStyleBackColor = false;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
+            // 
             // Window
             // 
             this.AcceptButton = this.Step;
@@ -207,6 +223,7 @@
             this.BackgroundImage = global::GameOfLife.Properties.Resources.BACKGROUND;
             this.CancelButton = this.Close;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.Reset);
             this.Controls.Add(this.RasterOff);
             this.Controls.Add(this.RasterOn);
             this.Controls.Add(this.Play);
@@ -243,6 +260,7 @@
         private System.Windows.Forms.Button Play;
         private System.Windows.Forms.Button RasterOn;
         private System.Windows.Forms.Button RasterOff;
+        private System.Windows.Forms.Button Reset;
     }
 }
 

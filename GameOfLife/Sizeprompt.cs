@@ -14,6 +14,8 @@ namespace GameOfLife
     public partial class Sizeprompt : Form
     {
         public static int size = 0;
+        public static string template = "Empty";
+        public static bool[,] grid;
         public Sizeprompt()
         {
             InitializeComponent();
@@ -25,15 +27,23 @@ namespace GameOfLife
             {
                 size = int.Parse(textBox1.Text);
                 if (size <= 0) throw new Exception();
-                this.Hide();
-                Window gameOfLife = new Window();
-                gameOfLife.ShowDialog();
-                this.Close();
+                try
+                {
+                    grid = BasePatterns.GetPattern(TemplateSelector.Text, size);
+                    this.Hide();
+                    Window gameOfLife = new Window();
+                    gameOfLife.ShowDialog();
+                    this.Close();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Selected pattern too large for selected grid size!", "Error");
+                }
 
             }
             catch (Exception)
             {
-                string message = "Input is not correct!";
+                string message = "Size is not valid!";
                 string title = "Error";
                 textBox1.Focus();
                 MessageBox.Show(message, title);

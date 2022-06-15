@@ -12,9 +12,6 @@ namespace GameOfLife
         {
             // Initialize empty "dead" grid
             bool[,] grid = new bool[size, size];
-            /*for (int i = 0; i < grid.GetLength(0); i++)
-                for (int j = 0; j < grid.GetLength(1); j++)
-                    grid[i, j] = false;*/
 
             switch (name)
             {

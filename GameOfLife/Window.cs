@@ -28,7 +28,7 @@ namespace GameOfLife
         public Window()
         {
 
-            grid = BasePatterns.GetPattern("Empty", size);
+            grid = Sizeprompt.grid;
 
             InitializeComponent();
 
@@ -56,7 +56,6 @@ namespace GameOfLife
             textBoxBlijfLeven.ReadOnly = false;
             textBoxRadius.ReadOnly = false;
             textBoxSnelheid.ReadOnly = false;
-            TemplateSelector.Enabled = true;
             Play.Show();
         }
 
@@ -68,7 +67,6 @@ namespace GameOfLife
             textBoxBlijfLeven.ReadOnly = true;
             textBoxRadius.ReadOnly = true;
             textBoxSnelheid.ReadOnly = true;
-            TemplateSelector.Enabled = false;
             Pauze.Show();
         }
 
@@ -219,26 +217,6 @@ namespace GameOfLife
             this.Close();
         }
 
-        private void YesButton_CheckedChanged(object sender, EventArgs e)
-        {
-            if (YesButton.Checked)
-            {
-                lines = true;
-                lines_changed = true;
-                panel.Invalidate();
-            }
-        }
-
-        private void NoButton_CheckedChanged(object sender, EventArgs e)
-        {
-            if (NoButton.Checked)
-            {
-                lines = false;
-                lines_changed = true;
-                panel.Invalidate();
-            }
-        }
-
         private void Panel_MouseClick(object sender, MouseEventArgs e)
         {
             if (pauze)
@@ -253,17 +231,22 @@ namespace GameOfLife
             }
         }
 
-        private void TemplateSelector_ChoiceChanged(object sender, EventArgs e)
+        private void RasterOn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                grid = BasePatterns.GetPattern(TemplateSelector.Text, size);
-                panel.Invalidate();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Selected pattern too large for selected grid size.");
-            }
+            RasterOn.Hide();
+            lines = true;
+            lines_changed = true;
+            RasterOff.Show();
+            panel.Invalidate();
+        }
+
+        private void RasterOff_Click(object sender, EventArgs e)
+        {
+            RasterOff.Hide();
+            lines = false;
+            lines_changed = true;
+            RasterOn.Show();
+            panel.Invalidate();
         }
     }
 }

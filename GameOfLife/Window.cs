@@ -56,7 +56,6 @@ namespace GameOfLife
             textBoxBlijfLeven.ReadOnly = false;
             textBoxRadius.ReadOnly = false;
             textBoxSnelheid.ReadOnly = false;
-            Reset.Enabled = true;
             Play.Show();
         }
 
@@ -68,7 +67,6 @@ namespace GameOfLife
             textBoxBlijfLeven.ReadOnly = true;
             textBoxRadius.ReadOnly = true;
             textBoxSnelheid.ReadOnly = true;
-            Reset.Enabled = false;
             Pauze.Show();
         }
 

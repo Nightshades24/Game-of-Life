@@ -75,6 +75,7 @@
             this.Pauze.BackColor = System.Drawing.Color.Transparent;
             this.Pauze.BackgroundImage = global::GameOfLife.Properties.Resources.PAUZE;
             this.Pauze.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Pauze.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Pauze.FlatAppearance.BorderSize = 0;
             this.Pauze.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Pauze.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -100,6 +101,8 @@
             // 
             this.Help.BackColor = System.Drawing.Color.Transparent;
             this.Help.BackgroundImage = global::GameOfLife.Properties.Resources.HELP;
+            this.Help.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Help.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Help.FlatAppearance.BorderSize = 0;
             this.Help.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Help.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -124,6 +127,8 @@
             // 
             this.Close.BackColor = System.Drawing.Color.Transparent;
             this.Close.BackgroundImage = global::GameOfLife.Properties.Resources.CLOSE;
+            this.Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Close.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Close.FlatAppearance.BorderSize = 0;
             this.Close.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -140,6 +145,8 @@
             // 
             this.Step.BackColor = System.Drawing.Color.Transparent;
             this.Step.BackgroundImage = global::GameOfLife.Properties.Resources.STEP;
+            this.Step.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Step.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Step.FlatAppearance.BorderSize = 0;
             this.Step.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Step.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -156,6 +163,7 @@
             this.Play.BackColor = System.Drawing.Color.Transparent;
             this.Play.BackgroundImage = global::GameOfLife.Properties.Resources.PLAY;
             this.Play.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Play.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Play.FlatAppearance.BorderSize = 0;
             this.Play.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Play.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -171,6 +179,8 @@
             // 
             this.RasterOn.BackColor = System.Drawing.Color.Transparent;
             this.RasterOn.BackgroundImage = global::GameOfLife.Properties.Resources.ON;
+            this.RasterOn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.RasterOn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RasterOn.FlatAppearance.BorderSize = 0;
             this.RasterOn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.RasterOn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -186,6 +196,8 @@
             // 
             this.RasterOff.BackColor = System.Drawing.Color.Transparent;
             this.RasterOff.BackgroundImage = global::GameOfLife.Properties.Resources.OFF;
+            this.RasterOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.RasterOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RasterOff.FlatAppearance.BorderSize = 0;
             this.RasterOff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.RasterOff.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -201,6 +213,8 @@
             // Reset
             // 
             this.Reset.BackColor = System.Drawing.Color.Transparent;
+            this.Reset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Reset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reset.FlatAppearance.BorderSize = 0;
             this.Reset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Reset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -221,6 +235,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::GameOfLife.Properties.Resources.BACKGROUND;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.CancelButton = this.Close;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.Reset);
